@@ -479,7 +479,7 @@ type RequestGetPayments struct {
 }
 type ResponseGetPayments struct {
 	// list of payments
-	payments struct {
+	Payments []struct {
 		// Payment ID matching the input parameter.
 		PaymentID string `json:"payment_id"`
 		// Transaction hash used as the transaction ID.

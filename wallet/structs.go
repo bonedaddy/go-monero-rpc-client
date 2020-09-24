@@ -756,7 +756,9 @@ type RequestCheckReserveProof struct {
 }
 type ResponseCheckReserveProof struct {
 	// States if the inputs proves the reserve.
-	Good bool `json:"good"`
+	Good  bool   `json:"good"`
+	Total uint64 `json:"total"`
+	Spent uint64 `json:"spent"`
 }
 
 // GetTransfers()
